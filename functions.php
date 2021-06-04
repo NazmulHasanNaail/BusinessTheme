@@ -10,3 +10,6 @@ require_once('class-wp-bootstrap-navwalker.php');
      ));
  }
  add_action('after_setup_theme', 'business_theme_setup');
+
+//Customizer File
+require get_template_directory().'/inc/customizer.php';
