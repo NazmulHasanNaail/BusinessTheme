@@ -22,6 +22,8 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 body {
+  box-sizing: border-box;
+  overflow: hidden;
   padding-top: 20px;
   font-size:15px;
   color: #7a7a7a;
@@ -81,7 +83,6 @@ a{
   border-bottom: 1px solid #e5e5e5;
   padding-top:90px;
   padding-bottom: 90px;
-  background: url('../img/banner.jpg') 0 -80px;
   color:#fff;
 }
 
