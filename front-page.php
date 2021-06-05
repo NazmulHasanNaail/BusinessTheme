@@ -36,29 +36,14 @@
         </div>
       </section>
 
-      <section class="row content-region-1 pt50 pb40">
-        <div class="container">
-          <div class="col-md-12">
-            <h1>Clean Bootstrap Wordpress Theme</h1>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sapien sem, laoreet eu tempus vitae, sollicitudin eu odio</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="row content-region-2 pt40 pb40">
-        <div class="container">
-          <div class="col-md-5">
-            <img src="img/pic1.jpg">
-          </div>
-          <div class="col-md-7">
-            <h3>Theme Features</h3>
-            <ul class="list-group">
-              <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Clean Code</li>
-              <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Custom Showcase Area</li>
-              <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Bootstrap 3 Framework</li>
-              <li class="list-group-item"><i class="fa fa-check" aria-hidden="true"></i> Multiple Color Choices</li>
-            </ul>
-          </div>
-        </div>
-      </section>
+            <?php
+            if(is_active_sidebar('content_region_1')):
+              dynamic_sidebar('content_region_1');
+            endif;
+             ?>
+            <?php
+            if(is_active_sidebar('content_region_2')):
+              dynamic_sidebar('content_region_2');
+            endif;
+             ?>
 <?php get_footer(); ?>
