@@ -27,7 +27,9 @@ body {
   color: #7a7a7a;
   line-height: 1.7em;
 }
-
+ul,li{
+  list-style: none;
+}
 a{
   color:#0faf97;
 }
@@ -212,5 +214,46 @@ article.post .meta li{
 article.post img{
   width:100%;
   height: auto;
+  margin-bottom: 20px;
+}
+.comments{
+  border: 1px #ccc solid;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.comments h2, .comments h3{
+  background: #0faf97;
+  color: #fff;
+  padding: 5px;
+}
+.comment-body{
+  border: #ccc 1px solid;
+  margin-bottom: 10px;
+  padding: 20px 10px;
+}
+.comment-meta{
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  overflow: auto;
+}
+.comment-meta img{
+  float: left;
+  margin-right: 10px;
+}
+.comment-meta time{
+  margin-left: 12px;
+}
+.comment-reply-link{
+  background: #0faf97;
+  color:#fff;
+  display: inline-block;
+  padding: 10px 15px;
+}
+.comment-form input, .comment-form textarea{
+  width: 100%;
+  padding: 3px;
+  border: #ccc 1px solid;
   margin-bottom: 20px;
 }
