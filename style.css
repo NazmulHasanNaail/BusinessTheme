@@ -184,6 +184,7 @@ article.post img{
   color:#ffffff;
   padding-bottom:10px;
   border-bottom:6px #ddd solid;
+  margin-bottom: 50px;
 }
 
 article.post{
@@ -210,5 +211,6 @@ article.post .meta li{
 
 article.post img{
   width:100%;
+  height: auto;
   margin-bottom: 20px;
 }

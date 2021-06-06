@@ -4,6 +4,8 @@ require_once('class-wp-bootstrap-navwalker.php');
  function business_theme_setup(){
      //Logo Support
      add_theme_support('custom-logo');
+     //Feature Image
+     add_theme_support('post-thumbnails');
      
      register_nav_menus(array(
          'primary' => __('Primary Menu')
@@ -52,6 +54,15 @@ require_once('class-wp-bootstrap-navwalker.php');
         'after_widget' => '</div>',
         'before_title' => '<h4>',
         'after_title' => '</h4>'
+    ));
+
+    register_sidebar(array(
+        'name' => 'Sidebar',
+        'id'   => 'sidebar',
+        'before_widget' => '<div class="panel panel-default side-widget">',
+        'after_widget' => '</div></div>',
+        'before_title' => '<div class="panel-heading"><h3 class="panel-title">',
+        'after_title' => '</h3></div><div class="panel-body">'
     ));
  }
  add_action('widgets_init', 'init_widgets');
